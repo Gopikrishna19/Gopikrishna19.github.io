@@ -1,0 +1,20 @@
+{
+  "mappings": [
+    {
+      "src": "less/styles.less",
+      "dest": "css/styles.css"
+    }
+  ],
+  "ignores": [
+    "*.css"
+  ],
+  "options": {
+    "outputStyle": "compress",
+    "lineComments": false,
+    "debugInfo": false,
+    "strictMath": false,
+    "strictUnits": false,
+    "sourceMap": true,
+    "autoprefix": true
+  }
+}
