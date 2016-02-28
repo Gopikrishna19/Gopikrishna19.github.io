@@ -1,0 +1,49 @@
+.intro {
+  height: 100%;
+  color: #015561;
+  background-color: #E0F7FA;
+  overflow: hidden;
+  position: relative;
+
+  &.active {
+    position: relative;
+    z-index: 3;
+    box-shadow: 0 0 100px #015561;
+  }
+
+  @ratio: 57/175;
+  .cloud-1, .cloud-2 {
+    height: 57px;
+    width: 175px;
+    position: absolute;
+    background-image: url(../images/cloud-1.png);
+    background-size: 100% 100%;
+  }
+
+  .cloud-1 {
+    top: 100px;
+    left: 100px;
+  }
+
+  .cloud-2 {
+    width: 100px;
+    height: 100px * @ratio;
+    top: 200px;
+    right: 200px;
+  }
+
+  .frame {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      font-size: 3em;
+      font-family: 'Sacramento', sans-serif;
+      margin: 0;
+    }
+  }
+
+}
